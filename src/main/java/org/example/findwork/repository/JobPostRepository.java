@@ -1,0 +1,7 @@
+package org.example.findwork;
+
+import org.example.findwork.models.JobPost;
+import org.springframework.data.mongodb.repository.MongoRepository;
+
+public interface JobPostRepository extends MongoRepository<JobPost, String> {
+}
