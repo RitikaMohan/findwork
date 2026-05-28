@@ -1,15 +1,14 @@
-package main.java.models;
+package org.example.findwork.models;
 
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.Arrays;
-import java.util.List;
 
 @Document(collection = "JobPost")
 public class JobPost {
 
-    private String description;
-    private int experience;
+    private String desc;
+    private int exp;
     private String profile;
     private String[] techs;
 
@@ -17,19 +16,19 @@ public class JobPost {
     }
 
     public int getExperience() {
-        return experience;
+        return exp;
     }
 
     public void setExperience(int experience) {
-        this.experience = experience;
+        this.exp = experience;
     }
 
     public String getDescription() {
-        return description;
+        return desc;
     }
 
     public void setDescription(String description) {
-        this.description = description;
+        this.desc = description;
     }
 
     public String getProfile() {
@@ -51,8 +50,8 @@ public class JobPost {
     @Override
     public String toString() {
         return "JobPost{" +
-                "description='" + description + '\'' +
-                ", experience=" + experience +
+                "description='" + desc + '\'' +
+                ", experience=" + exp +
                 ", profile='" + profile + '\'' +
                 ", techs=" + Arrays.toString(techs) +
                 '}';

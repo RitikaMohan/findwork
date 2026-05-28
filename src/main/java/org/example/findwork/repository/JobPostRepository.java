@@ -1,4 +1,4 @@
-package org.example.findwork;
+package org.example.findwork.repository;
 
 import org.example.findwork.models.JobPost;
 import org.springframework.data.mongodb.repository.MongoRepository;
